@@ -34,31 +34,14 @@ class MainViewModelTest{
     val mainViewModel = NetworkCallViewModel(testDispatcher)
 
     @Test
-    fun testsSaveSessionDataMetDispatcher() = runBlocking {
-
-        val totalExecutionTime = measureTimeMillis {
-            val isSessionExpired = mainViewModel.checkSessionExpiry()
-            mainViewModel.saveSessionLiveData()
-            delay(5000)
-            val userData = mainViewModel.userDataLive.value
-            assertEquals(mainViewModel.response.value, userData)
-            assertTrue(isSessionExpired)
-        }
-        print("Total Execution Time: $totalExecutionTime")
-    }
-
-    @Test
-    fun testsSaveSessionDataMetDispatcherZonderCoroutine() = runBlocking(){
-
-        val totalExecutionTime = measureTimeMillis {
-            val isSessionExpired = mainViewModel.checkSessionExpiry()
-            mainViewModel.saveSessionData()
-            delay(5000)
-            val userData = mainViewModel.userDataLiveZonderCo.value
-            assertEquals(mainViewModel.response.value, userData)
-            assertTrue(isSessionExpired)
-        }
-        print("Total Execution Time: $totalExecutionTime")
+    fun testsSaveSessionDataMetDispatcher() = runBlocking{
+            val totalExecutionTime = measureTimeMillis {
+                mainViewModel.saveSessionLiveData()
+                delay(5000)
+            }
+            print("Total Execution Time: ${totalExecutionTime.minus(5000)}")
+        assertTrue(mainViewModel.userDataLiveZonderCo.value.toString().contains("coord"))
+        assertTrue(mainViewModel.userDataLiveZonderCo2.value.toString().contains("location"))
     }
 
 

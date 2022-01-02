@@ -17,10 +17,6 @@ class NetworkNavFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentNetworkNavBinding.inflate(inflater)
 
-        binding.apiButton.setOnClickListener{ view ->
-            Navigation.findNavController(view).navigate(R.id.action_networkNavFragment_to_networkCallFragment);
-        }
-
         binding.apiCoButton.setOnClickListener{ view ->
             Navigation.findNavController(view).navigate(R.id.action_networkNavFragment_to_networkCoroutineCallFragment);
         }

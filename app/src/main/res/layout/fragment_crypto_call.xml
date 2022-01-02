@@ -14,12 +14,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<!--        <TextView-->
-<!--            android:id="@+id/textCall1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="@{viewModel.response}"-->
-<!--            android:textSize="6dp"></TextView>-->
+        <TextView
+            android:id="@+id/textCrypto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@{viewModel.response}"
+            android:textSize="15dp" />
 
     </LinearLayout>
 

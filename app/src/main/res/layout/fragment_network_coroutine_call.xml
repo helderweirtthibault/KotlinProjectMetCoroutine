@@ -25,11 +25,5 @@
             android:layout_height="200dp"
             android:textSize="13dp"
             android:text="@{viewModel.response2}"></TextView>
-        <TextView
-            android:id="@+id/text1CoCall3"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:textSize="13dp"
-            android:text="@{viewModel.response3}"></TextView>
     </LinearLayout>
 </layout>

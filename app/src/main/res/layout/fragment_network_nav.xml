@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/netwerkNavScreen"
+        android:id="@+id/fragment_nav_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -18,19 +18,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/llNavScr">
 
-            <Button
-                android:id="@+id/apiButton"
-                android:layout_width="match_parent"
-                android:layout_height="113dp"
-                android:backgroundTint="@color/bgBlue"
-                android:text="API zonder coroutine"
-                android:textColor="@color/white"
-                tools:layout_editor_absoluteX="14dp"
-                tools:layout_editor_absoluteY="95dp">
+<!--            <Button-->
+<!--                android:id="@+id/apiButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="113dp"-->
+<!--                android:backgroundTint="@color/bgBlue"-->
+<!--                android:text="API zonder coroutine"-->
+<!--                android:textColor="@color/white"-->
+<!--                tools:layout_editor_absoluteX="14dp"-->
+<!--                tools:layout_editor_absoluteY="95dp">-->
 
-            </Button>
+<!--            </Button>-->
 
             <Button
                 android:id="@+id/apiCoButton"
