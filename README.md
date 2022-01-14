@@ -5,14 +5,23 @@ Er werd gebruikgemaakt van drie verschillende WeatherAPIs en van de Google Maps 
 In de applicatie zijn vele verschillende werkingen getest of geëxperimenteerd, en is het mogelijk dat sommige code niet relevant meer is voor de huidige werking.
 De hardware belasting zal worden gemeten met de profiler tools en de meerwaarde in netwerkcommunicatie via testen.
 
-Uiteindelijk wordt om accurate gegevens de applicatie opgesplist in 2 applicaties waarbij één coroutines bevat. Dit voorkomt dat de data beïnvloedt wordt door de cache.
-In het totaal worden dus 3 applicaties getest (+ retrofit Mars applicatie). 
+Uiteindelijk wordt om accurate gegevens de applicatie opgesplist in meerdere applicaties waarbij deze de coroutines bevat. Dit voorkomt dat de data deels beïnvloedt wordt derden.
+
+Deze publieke repository is enkel bruikbaar nadat de API sleutels vervangen worden.
+
+## API KEYS
+
+Voor het vervangen van de sleutels moet telkens in de ViewModel strings een persoonlijk aangemaakte key ingegeven worden.
+Maak voor elk van de Weather APIs via de algemene site een account en sleutel aan:
+
+- openweather
+- weatherapi
+
+Voor google maps moet deze tutorial gevolgd worden voor het verkrijgen van een sleutel:
+https://developers.google.com/maps/documentation/maps-static/get-api-key
 
 ## TODO - planning
 
-* Applicatie converteren naar Java
-* Verzamelen gegevens en vergelijken
-* Proof-of-concept uitwerken in de paper (pdf)
 
 ## Werking huidige applicatie
 
